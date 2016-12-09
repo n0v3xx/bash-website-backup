@@ -5,12 +5,12 @@
 ######################################################################################################
 
 # Modify me #
-BACKUP_MODE=1                                                   # 1 = local | 2 = local & dropbox | 3 = dropbox
+BACKUP_MODE=1 # 1 = local | 2 = local & dropbox | 3 = dropbox
 PATH_BACKUP="/root/backup" # Full path to the backup directory
 PATH_TARGET="/var/www/mysite"   # Full path to the target
 PATH_EXCLUDE="/var/www/mysite/images" # Full path to excluded folder
-FILENAME="backup-website"                                       # archive name
-DATE=$(date +"%d-%m-%Y")                                        # example 08-12-2016
+FILENAME="backup-website" # archive name
+DATE=$(date +"%Y-%m-%d")  # example 2016-12-08
 
 # dropbox upload
 # https://github.com/andreafabrizi/Dropbox-Uploader
