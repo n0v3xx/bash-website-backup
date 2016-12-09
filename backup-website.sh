@@ -76,7 +76,7 @@ if test ${DROPBOX_ENABLE} == 1
         bash ${DROPBOX_PATH_UPLOADER} -f ${DROPBOX_PATH_CONFIG} upload ${PATH_BACKUP}/${FILENAME}-${DATE}.tar.gz ${DROPBOX_PATH_FOLDER}
         # delete old uploads
         echo "Try to delete "
-        bash ${DROPBOX_PATH_UPLOADER} -f ${DROPBOX_PATH_CONFIG} delete ${DROPBOX_PATH_FOLDER}/${FILENAME}-${DROPBOX_DELETE_DATE}.sql.gz
+        bash ${DROPBOX_PATH_UPLOADER} -f ${DROPBOX_PATH_CONFIG} delete ${DROPBOX_PATH_FOLDER}/${FILENAME}-${DROPBOX_DELETE_DATE}.tar.gz
     else
         echo "Dropbox upload not enabled"
 fi
